@@ -1,12 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// This file exports both the List and ListItem components
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+export function List({ children }) {
+  return (
+    <div className="list-overflow-container">
+      <ul className="list-group">{children}</ul>
+    </div>
+  );
+}
+
+export function ListItem({ children }) {
+  return <li className="list-group-item">{children}</li>;
+}

@@ -6,9 +6,7 @@ import Wrapper from './components/Wrapper'
 function App() {
   return (
     <Wrapper>
-      <Navbar>
-      
-      </Navbar>
+      <Navbar />
     </Wrapper>
   );
 }

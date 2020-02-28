@@ -1,13 +1,19 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
-import Wrapper from './components/Wrapper'
+import Wrapper from './components/Wrapper';
+import Jumbotron from './components/Jumbotron';
 
 function App() {
   return (
-    <Wrapper>
+    <Router>
+   <div>
       <Navbar />
-    </Wrapper>
+      <Jumbotron />
+      <h1>hello</h1>
+    </div>
+    </Router>
   );
 }
 
